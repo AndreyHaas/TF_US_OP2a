@@ -1,6 +1,3 @@
-Конечно. Вот готовый Markdown-файл с описанием паттерна «Стратегия» (Strategy Pattern) на немецком языке.
-
-```markdown
 # Entwurfsmuster: Strategie (Strategy Pattern)
 
 ## 1. Einleitung
@@ -11,29 +8,26 @@ Stellen Sie sich vor, Sie entwickeln eine Navigations-App. Die Route kann mit de
 
 ## 3. Lösung durch Strategie-Muster
 Das Muster definiert eine Familie von Algorithmen, implementiert sie jeweils in einer eigenen Klasse und macht sie austauschbar. Der Kontext delegiert die Ausführung an eine konkrete Strategie.
-
 ### 3.1 UML-Klassenstruktur
 ```
 
-```+----------------+        +---------------------+
-|    Context     |        | <<interface>>       |
-|----------------|        | Strategy             |
-| - strategy     |------->|---------------------|
-| + setStrategy()|        | + execute(data)     |
-| + doSomething()|        +---------------------+
-+----------------+                  ^
-|
-+---------------+---------------+
-|               |               |
-+-------+-------+ +-------+-------+ +-------+
-| ConcreteStratA| | ConcreteStratB| |ConcreteStratC|
-+---------------+ +---------------+ +---------------+
-| + execute()    | | + execute()    | | + execute()   |
-+---------------+ +---------------+ +---------------+
-
++------------+      +------------------+
+| Context    |      | <<interface>>    |
+|------------|      | Strategy         |
+| - strategy |----->| + execute(data)  |
++------------+      +------------------+
+         ^                    ^
+         |                    |
+         +--------+-----------+
+                  |
+     +------------+------------+
+     |            |            |
++----+----+  +----+----+  +----+----+
+| Auto    |  | Fuss    |  | Fahrrad |
+| Route   |  | Route   |  | Route   |
++---------+  +---------+  +---------+
 ```
 ## 4. Code-Beispiel in Java (ähnlich in C++, Python, C#)
-
 
 ```java
 // 1. Strategie-Interface
