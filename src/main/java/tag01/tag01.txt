@@ -1,0 +1,65 @@
+DIA:
+Klasse, Attribute, Operationen (Methoden)
+Assoziationen:
+Vererbung
+Aggregation
+Einfache Beziehung (Verbindung, evtl. mit Richtung, Pfeile)
+Komposition (Zusammensetzung)
+
+Design Patterns:
+https://refactoring.guru/design-patterns/strategy
+Navi hat ein Interface
+Ich kann nicht solche Interfaces kaufen, die mich interessieren.
+Erweitert werden können, wenn Client das braucht.
+Wartbar, erweiterbar Software
+Stabiles Software
+
+IJ:
+Interface kann viele Methode haben.
+Die Methoden dürfen keinen Körper haben.
+In einer konkreten Klasse, die Interface implementiert, muss alle Methode überschrieben werden.
+Also bekommen sie den Körper.
+
+Word:
+2. StrategieEntwurfsmusterHandout.docx
+
+Open/Closed Prinzip
+Offen für Erweiterungen, geschlossen für Änderungen
+
+Pause
+
+Word
+2. StrategieEntwurfsmusterHandout.docx
+   1.4 Implementierungsschritte
+
+Wir starten mit dem Entwurf in UML
+1 - Wir als Client
+2 - App als Kontext
+Was für Strategie brauche ich
+Ich wähle eine Strategie
+Dann wird die Strategie geführt
+Der Client greift auf der Klasse zu.
+Und dann wird das Algorithmus geführt
+
+IJ:
+New Project
+New Module
+New Klasse - Interface "Strategie"
+
+Datentypen Wiederholung
+Primitive und komplexe Datentypen
+Mit Deklaration bereiten wir den Ort vor, um eine Variable zu speichern
+Wir brauchen den Ort von dem bestimmten Typ, der von der Variable abhängig ist
+
+Beispiel Tier, Maus, Hund, Hauptklasse
+Keine Objekte des Interfaces können erstellen werden.
+Also, nicht Tier t = new Tier();
+Sondern Tier t = new Maus();
+
+Erstellen alle Klasse für 1.4
+Strategie - (abstrakt) Interface,
+StrategieGrossschreibung, StrategieKleinschreibung, StrategieNormal,
+Kontext
+Client
+
+Alle Dateien von Dozentin werden hochgeladen.

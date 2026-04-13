@@ -1,0 +1,16 @@
+Strategierechner
+
+Entwickeln Sie eine einfache Konsolenanwendung.
+Die Konsole stellt den User die mathematischen Grundrechenoperationen (Addition, Subtraktion, Multiplikation, Division) zur Auswahl.
+Der User wählt eine der Operationen, indem dieser einen char eingibt.
+Die dem char entsprechende gewählte Grundrechenoperation wird als Strategie in der Kontextklasse (Strategiemuster) gesetzt.
+Der User gibt nacheinander zwei Zahlen an der Konsole ein.
+Die gewählte Rechenoperation wird mit beiden Zahlen ausgeführt.
+Die Anwendung gibt das Ergebnis der Rechenoperation an der Konsole aus.
+
+Hinweise:
+- Setzen Sie bei der Implementierung das Strategiemuster um.
+- Wir gehen von einem gutmütigen User aus.
+
+Zusatzaufgabe: Erstellen Sie vor der Implementierung ein UML Klassendiagramm für die Strategierechner Anwendung.
+

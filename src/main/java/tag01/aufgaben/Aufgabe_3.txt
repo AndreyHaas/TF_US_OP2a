@@ -1,0 +1,15 @@
+
+/* In Ihrem Online-Shop bieten Sie für Bestellungen 2 verschiedene Versandarten an.
+ * Der Standard-Versand kostet 10 €, ab einem Bestellwert von 100 € kostet er 5 €.
+ * Der Express-Versand kostet 15 €, ab einem Bestellwert von 100 € kostet er 10 €.
+ *
+ * Um die Versand-Strategien austauschbar zu machen, wird das Interface 'Versand' implementiert, welches eine 'berechnen()'-Methode zur Verfügung stellt.
+ * 'berechnen()' erwartet als Parameter einen Warenkorb und gibt Double zurück.
+ *
+ * Die Klasse 'Warenkorb' speichert Artikel-Objekte in einer Map, wobei Artikel der Key und Anzahl der Value sind. Die Versand-Strategie wird in einem privaten Feld gespeichert und kann über einen Setter geändert werden.
+ * Über den Warenkorb kann der Gesamtwert der Bestellung, also der Bestellwert, abgefragt werden. Über eine weitere Methode sind die Versandkosten verfügbar.
+ *
+ * Zu Artikeln wird die Bezeichnung und der Preis gespeichert.
+ *
+ * Erstellen Sie ein UML-Klassendiagramm und den Programmcode.
+ */

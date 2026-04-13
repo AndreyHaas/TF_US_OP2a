@@ -1,0 +1,4 @@
+// Offene Aufgabenstellung:
+// Schauen Sie sich das Package "Unrefaktorisiert" an. Refaktorisieren Sie die Anwendung nach dem Strategiemuster.
+// https://de.wikipedia.org/wiki/Refactoring
+
