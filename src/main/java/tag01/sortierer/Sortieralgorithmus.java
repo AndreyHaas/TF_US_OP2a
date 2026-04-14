@@ -1,8 +1,7 @@
-package sortierer;
+package tag01.sortierer;
 
 // 1. Interface erstellen mit einer abstrakten Methode
-public interface Sortieralgorithmus
-{
+public interface Sortieralgorithmus {
 
-    public abstract void sortiere(int[] arr);
+  void sortiere(int[] arr);
 }
