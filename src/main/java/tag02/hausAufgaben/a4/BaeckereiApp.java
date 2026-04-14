@@ -6,7 +6,7 @@ import java.util.List;
 
 public class BaeckereiApp {
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws InterruptedException {
     Baeckerei baeckerei = new Baeckerei("Familien-Baeckerei Schmidt");
 
     List<Kunde> kunden = new ArrayList<>();

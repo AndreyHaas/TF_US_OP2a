@@ -15,8 +15,7 @@ public class Zeitsteuerung {
     this.tage = tage;
   }
 
-  // Laesst die Zeit voranschreiten (alle 100ms ein Tag)
-  public void starteSimulation() {
+  public void starteSimulation() throws InterruptedException {
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
 
     System.out.println("=== SIMULATION STARTET ===\n");
@@ -25,12 +24,11 @@ public class Zeitsteuerung {
       LocalDate aktuellesDatum = startDatum.plusDays(i);
       System.out.println("📅 Datum: " + aktuellesDatum.format(formatter));
 
-      // Jeden Kunden auf Geburtstag pruefen
       for (Kunde kunde : kunden) {
         kunde.pruefeGeburtstag(aktuellesDatum);
       }
 
-      System.out.println(); // Leerzeile fuer bessere Lesbarkeit
+      System.out.println();
 
       try {
         Thread.sleep(100); // 100 Millisekunden warten
