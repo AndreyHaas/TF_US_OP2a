@@ -1,6 +1,5 @@
 package tag01.tiere;
 
-import GroßKleinSchreibung.Strategie;
 
 public class TierweltApp {
 
@@ -16,6 +15,4 @@ public class TierweltApp {
     public void führeStrategieAus() {
         t.macheGeräusch();
     }
-
-
 }

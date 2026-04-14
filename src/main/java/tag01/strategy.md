@@ -27,7 +27,7 @@ Das Muster definiert eine Familie von Algorithmen, implementiert sie jeweils in 
 | Route   |  | Route   |  | Route   |
 +---------+  +---------+  +---------+
 ```
-## 4. Code-Beispiel in Java (ähnlich in C++, Python, C#)
+## 4. Code-Beispiel in Java
 
 ```java
 // 1. Strategie-Interface

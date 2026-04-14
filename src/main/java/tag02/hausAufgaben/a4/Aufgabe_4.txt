@@ -1,0 +1,13 @@
+/* Sie schreiben ein Programm für eine Bäckerei, die für ihre Kunden an deren Geburtstag einen Kuchen backt.
+ * Die Bäckerei speichert ihre Kunden mit Name, Geburtstag und Lieblingsgeschmacksrichtung.
+ * Jeden Tag prüft eine Methode, ob eine Person in der Kundenliste Geburtstag hat.
+
+ * Da Sie die Kunden-Klasse abkapseln möchten, realisieren Sie die Kommunikation zwischen Kunde und Bäckerei über das Observer-Muster.
+ * Kunde ist der Sender des Events, denn dieser hat Geburtstag (hier ist die Liste vom Typ des Interfaces). Die Bäckerei empfängt das Event mit einer entsprechenden Methode (Implementiert das Interface). Das Backen des Kuchens wird über eine Konsolenausgabe simuliert.
+
+ * Damit Sie zum Testen des Programmes nicht ein ganzes Jahr warten müssen, bis jemand Geburtstag hat, implementieren Sie eine Methode, die die Zeit künstlich voranschreiten lässt. So könnte alle 100 Millisekunden ein Tag vergehen.
+ * Hinweis: Dies können Sie über eine While-Schleife und Thread.sleep(100) in dieser Methode lösen.
+
+ * In der Main legen Sie zum Testen ein paar Kunden an, fügen in jedem Kunden die Bäckerei als Beobachter hinzu, und lassen die Zeit voranschreiten.
+ * Als Ergebnis dessen sollten Sie in der Konsole das Datum für jeden Tag sehen und an den Geburtstagen eine Meldung der Bäckerei, dass ein Kuchen für den Kunden gebacken wird.
+ */

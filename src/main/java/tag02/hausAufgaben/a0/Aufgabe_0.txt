@@ -1,0 +1,13 @@
+/* Aufgabe 0
+ * Interface "Feuerlöscher" mit der Methode "feuerLöschen()"
+ * Klasse "Person"
+ * - mit einer Liste vom Typ Feuerlöscher
+ * -  einer void Methode "feuerRufen()", welche "Feuer!" auf der Konsole ausgibt,
+      und für alle Feuerlöscher die Methode aufruft.
+ * - einer weiteren Methode zum Hinzufügen neuer Feuerlöscher.
+ * Klasse "Feuerwehr", implementiert das Interface.
+ * - mit einer void Methode "feuerLöschen()" ohne Parameter, welche auf der Konsole "Feuer löschen!" ausgibt.
+ *
+ * In der Main:
+ * Eine Person und eine Feuerwehr erstellen. Die Feuerwehr abonniert das "Feuerlöscher"-Event der Person (Die Feuerwehr wird der Feuerlöscher-Liste hinzugefügt.) Starten Sie die "feuerRufen()"-Methode der Person.
+ */
