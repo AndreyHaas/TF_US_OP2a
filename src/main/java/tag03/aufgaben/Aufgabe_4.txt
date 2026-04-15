@@ -1,0 +1,11 @@
+/*
+ * In Ihrer Anwendung benötigen Sie eine Möglichkeit, dynamisch Benachrichtigungen für Kunden zu erzeugen.
+ * Kunden können dabei über eMail oder SMS benachrichtigt werden.
+ * Die Benachrichtigungen werden über die Klassen EmailNotification und SmsNotification repräsentiert.
+ * Für die eMail Benachrichtigung wird die Adresse und die Nachricht benötigt, für die SMS die Nummer und die Nachricht.
+ *
+ * Zum Erzeugen der Benachrichtigungen wählen Sie das Fabrik-Muster.
+ * Mit der Klasse NotificationFactory und der createNotification-Methode können Benachrichtigungen anhand der übergebenen Informationen erstellt werden.
+ * Wird der Methode "email" übergeben, wird eine EmailNotification und über "sms" eine SmsNotification erzeugt und zurückgegeben.
+
+ */

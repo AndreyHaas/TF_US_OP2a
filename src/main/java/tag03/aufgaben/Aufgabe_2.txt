@@ -1,0 +1,15 @@
+Sie erstellen eine E-Commerce-Anwendung, welches unterschiedliche Produkt-Typen verkauft, zum Beispiel Elektronik-Produkte, Bücher und Kleidung. 
+Jede Produkt-Kategorie erhält eine eigene Klasse mit spezifischen Attributen.
+
+Das Erzeugen der Objekte soll als Fabrik-Muster umgesetzt werden.
+Dazu brauchen Sie eine Klasse 'Product', welche als Basisklasse für alle Produkte dient.
+In diesem Beispiel haben alle Produkte die Methode 'displayInfo()', um den Produkt-Typ auszugeben.
+
+Erstellen Sie für die Produkt-Typen eigene Klassen, die von 'Product' erben.
+
+Die Erstellung der Produkt-Objekte findet in der 'ProductFactory' statt.
+Mit der statischen 'createProduct'-Methode kann entsprechend einem String-Parameter das konkrete Produkt erzeugt werden.
+Das erzeugte Objekt wird dann von der Methode zurückgegeben.
+Wird ein ungültiger Typ übergeben, wird eine IllegalArgumentException geworfen.
+
+In der Main-Methode lassen Sie zum Testen des Programms per Benutzereingabe ein Objekt über die Fabrik erstellen und rufen dann die 'displayInfo'-Methode des Produktes auf.
