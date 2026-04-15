@@ -1,11 +1,23 @@
 /* Sie möchten für Ihre Autowerkstatt ein Programm zur Verwaltung der Aufträge schreiben.
- * In Ihrem ersten Entwurf überlegen Sie sich ein einfaches Klassenkonzept. Dieses besteht aus einer Klasse "Werkstatt" und den Klassen "Kunde" und "Fahrzeug".
+ * In Ihrem ersten Entwurf überlegen Sie sich ein einfaches Klassenkonzept.
+ * Dieses besteht aus einer Klasse "Werkstatt" und den Klassen "Kunde" und "Fahrzeug".
  * Bei dem Entwurf beachten Sie die vollständige Abkapselung der Klassen Kunde und Fahrzeug.
- * In der Klasse Werkstatt speichern Sie die Fahrzeuge und die dazu gehörenden Kunden in einer Map "Aufträge". Die Identifikation des Auftrages findet über das Fahrzeug statt.
+ * In der Klasse Werkstatt speichern Sie die Fahrzeuge und die dazu gehörenden Kunden in einer Map
+ "Aufträge".
+ Die Identifikation des Auftrages findet über das Fahrzeug statt.
  * Zu den Kunden möchten Sie den "Namen", die "Kundennummer" und die "Telefonnummer" abspeichern.
  * Zu den Fahrzeugen möchten Sie das "Kennzeichen" speichern und ob das Fahrzeug "bearbeitet" wurde.
- * Um Kunden und Fahrzeuge einfach im Programm ausgeben zu können, überschreiben Sie die "toString()"-Methode.
- * Wurde das Fahrzeug bearbeitet, wird automatisch von der Werkstatt eine SMS an den Kunden (an den realen Kunden, nicht die Kunden-Klasse) geschickt, was Sie in diesem Entwurf über eine Konsolenausgabe realisieren. Damit die Werkstatt von der "Zustandsänderung des Fahrzeuges" erfährt, möchten Sie eine Observer-Liste in der Klasse Fahrzeug implementieren, da Sie eine strikte Abkapselung der Klassen verfolgen.
- * Die Werkstatt-Klasse soll über eine Methode zur "Erfassung der Aufträge" verfügen, welche das Fahrzeug und den Kunden in die Map aufnimmt und sich im Fahrzeug als Observer hinzufügt.
- * Zum Testen erstellen Sie in der Main einen Kunden, ein Fahrzeug, lassen die Werkstatt beides als Auftrag registrieren, geben alle Aufträge auf der Konsole aus und setzen für das Fahrzeug den Status auf bearbeitet. Als Ergebnis erwarten Sie dann das Verschicken der SMS mit den Daten zu dem Fahrzeug und dem Kunden über eine Konsolenausgabe.
+ * Um Kunden und Fahrzeuge einfach im Programm ausgeben zu können, überschreiben
+ * Sie die "toString()"-Methode.
+ * Wurde das Fahrzeug bearbeitet, wird automatisch von der Werkstatt eine SMS an den Kunden
+   (an den realen Kunden, nicht die Kunden-Klasse) geschickt, was Sie in diesem Entwurf über eine
+   Konsolenausgabe realisieren. Damit die Werkstatt von der "Zustandsänderung des Fahrzeuges" erfährt,
+   möchten Sie eine Observer-Liste in der Klasse Fahrzeug implementieren, da Sie eine strikte
+   Abkapselung der Klassen verfolgen.
+ * Die Werkstatt-Klasse soll über eine Methode zur "Erfassung der Aufträge" verfügen, welche das
+    Fahrzeug und den Kunden in die Map aufnimmt und sich im Fahrzeug als Observer hinzufügt.
+ * Zum Testen erstellen Sie in der Main einen Kunden, ein Fahrzeug, lassen die Werkstatt beides
+    als Auftrag registrieren, geben alle Aufträge auf der Konsole aus und setzen für das Fahrzeug
+    den Status auf bearbeitet. Als Ergebnis erwarten Sie dann das Verschicken der SMS mit den
+    Daten zu dem Fahrzeug und dem Kunden über eine Konsolenausgabe.
  */
