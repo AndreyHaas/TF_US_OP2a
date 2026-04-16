@@ -1,0 +1,76 @@
+Adaptermuster:
+Ihr Programm hat eine Klasse RundesLoch. In dieses Loch passen Objekte vom Typ RunderStoepsel mit einem Radius gleich oder kleiner
+als das runde Loch. Der Kunde möchte nun, dass sie eine externe Bibliothek (gemockt mit Klasse QuadratischerStoepsel) mit quadratischen 
+Stöpseln einbinden, die ebenfalls geprüft werden sollen, ob sie in das runde Loch passen. QuadratischerStöpsel hat statt einen Radius, 
+aber eine Breite bzw. Seitenlaenge. Die Adapterklasse hat eine Referenz auf ein QuadratischenStoepsel als Attribut (Aggregation) und 
+erledigt die Transformation von Seitenlaenge zu Radius. 
+
+Um die Typen aus der externen Bibliothek einzubinden und in das Loch zu bekommen, verwenden sie bitte eine Variante des Adaptermusters. 
+In der Main-Methode erstellen sie das runde Loch und prüfen zunächst die runden Stöpsel auf Passgenauigkeit. 
+Danach verwenden Sie die Adapterklasse, um auch die eckigen Stöpsel auf Passgenauigkeit mit dem Loch zu prüfen.
+
+Hinweis: Um den Radius eines Quadrats zu bestimmen, multiplizieren Sie bitte eine Seitenlänge des Quadrats mit der Wurzel aus 2 und 
+teilen Sie das Ergebnis durch zwei. Siehe //https://sciencing.com/calculate-radius-square-2806.html 
+
+Hinweis: Die Musterlösung funktioniert auf eine besondere Art bzw. ist eine Variante des Adaptermusters: 
+Wir lassen den Adapter erben von der Klasse RunderStoepsel. Wir überschreiben die geerbte getRadius-Methode im Adapter und implementieren 
+in diese die Transformationslogik von Seitenlänge des QuadratischenStoepsels zu Radius.
+Wir können dann den Adapter in seiner Form als RunderStoepsel (Polymorphie: Adapter erbt von RunderStoepsel) direkt an die
+Methode rundesLoch.pruefeObStoepselPasst(RunderStoepsel stoepsel) als Argument übergeben. Die Klasse RundesLoch kennt nur
+die Klasse RunderStoepsel.
+
+Alternative Lösungen mit Adaptermuster sind natürlich auch gültig!
+
+a) Erstellen Sie das entsprechende UML Klassendiagramm.
+b) Implementieren Sie den Quellcode in Java nach einer Variante des Adaptermusters.
+
+
+
+class RundesLoch {
+	private double radius;
+
+	public RundesLoch(double radius){
+		this.radius = radius;
+	}
+
+	public double getRadius() {
+		return radius;
+	}
+
+	public boolean pruefeObStoepselPasst(RunderStoepsel stoepsel)
+	{
+		if (stoepsel.getRadius() <= radius)
+			return true;
+		return false;
+	}
+}
+
+// ----------------------------------------------------------------
+
+class RunderStoepsel {
+
+	private double radius;
+
+	public RunderStoepsel(double radius) {
+		this.radius = radius;
+	}
+
+	public double getRadius() {
+
+		return this.radius;
+	}
+}
+// ----------------------------------------------------------------
+
+class QuadratischerStoepsel {
+	private double breite;
+
+	public QuadratischerStoepsel(double breite) {
+
+		this.breite = breite;
+	}
+
+	public double getBreite() {
+		return breite;
+	}
+}

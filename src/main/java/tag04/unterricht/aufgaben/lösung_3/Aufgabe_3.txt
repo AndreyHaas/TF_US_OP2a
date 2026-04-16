@@ -1,0 +1,30 @@
+Sie verwendeten in der Vergangenheit eine API, um zwei übergebene Werte miteinander zu verrechnen.
+Ein Update Ihres Programmes sieht nun aber vor, dass als Eingabe ein Array von Werten verwendet wird.
+Dazu wurde auch eine neue API zur Verfügung gestellt.
+Sie möchten jedoch weiterhin die Möglichkeit bieten, die alte API für die Verarbeitung der Daten zu verwenden.
+Damit dies möglich ist, brauchen Sie einen Adapter.
+
+Folgendes ist gegeben:
+public class LegacyAPI
+{
+    public int addNumbers(int a, int b)
+    {
+        return a + b;
+    }
+}
+
+public class NewAPI
+{
+    public int calculateSum(int[] numbers)
+    {
+        int sum = 0;
+        for (int i=0; i<numbers.length; i++) {
+            sum += numbers[i];
+        }
+        return sum;
+    }
+}
+
+Erstellen Sie eine Adapter-Klasse, deren Input zur neuen API passt, den Aufruf aber an die alte API weiterleitet.
+Testen Sie Ihr Programm in der Main-Methode:
+System.out.println("Mit Adapter : " + newAPI.calculateSum(new int[] { 2, 3, 4 }));
