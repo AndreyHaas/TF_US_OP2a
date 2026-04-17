@@ -7,7 +7,7 @@ public class QuadratAdapter extends RunderStoepsel {
   private QuadratischerStoepsel quadratStoepsel;
 
   public QuadratAdapter(QuadratischerStoepsel quadratStoepsel) {
-    super(0); // Dummy-Wert, wird ueberschrieben
+    super(0);
     this.quadratStoepsel = quadratStoepsel;
   }
 
