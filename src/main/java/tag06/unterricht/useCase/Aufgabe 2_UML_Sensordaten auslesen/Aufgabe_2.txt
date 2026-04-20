@@ -1,0 +1,3 @@
+Mitarbeiter können die Sensordaten auslesen.
+Administratoren können die Sensordaten exportieren, dazu müssen sie aber immer zuerst ausgelesen werden 
+und Administratoren müssen sich für diesen Vorgang einloggen, wenn sie noch nicht eingeloggt sind.

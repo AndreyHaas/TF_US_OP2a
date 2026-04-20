@@ -1,0 +1,12 @@
+Modellieren Sie einen Bestellvorgang mit Hilfe eines UML Aktivitätsdiagramms
+Prozess Bestellvorgang aus Sicht eines Webshops
+Der Shop nimmt einen Bestellauftrag entgegen. Der Bestellauftrag kann abgelehnt werden oder angenommen werden. ^
+Wurde der Bestellauftrag abgelehnt, wird der Auftrag direkt abgeschlossen. Wurde der Auftrag angenommen, 
+wird dieser bearbeitet. Anschließend wird gleichzeitig die Rechnung verschickt und die Waren versendet. 
+Der Bestellauftrag wird anschließend beendet und der Prozess endet.
+Folgende Aktionen konnten ohne Festlegung der Reihenfolge identifiziert werden:
+- Rechnung verschicken
+- Bestellauftrag abschließen
+- Bestellauftrag bearbeiten
+- Waren versenden
+- Bestellauftrag empfangen
