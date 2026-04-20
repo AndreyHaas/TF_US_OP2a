@@ -1,0 +1,13 @@
+Der Ablauf einer Foto- oder Poster-Bestellung im Onlineshop soll in einem UML Aktivitätsdiagramm dargestellt werden.
+Kunde ruft die Startseite auf.
+Kunde wählt das gewünschte Produkt aus und lädt ein Bild hoch.
+Der Shop prüft das Bild.
+Ist das Bild nicht Okay (zu groß, zu klein, etc), muss ein anderes Bild gewählt werden
+Ist das Bild okay, kann das Produkt in den Warenkorb gelegt werden
+Kunde kann weitere Bilder auswählen oder die Bestelldaten vervollständigen.
+Die Bestelldaten werden vom Shop geprüft
+Sind sie nicht okay, müssen sie vom Kunden überarbeitet werden.
+Sind die Daten okay, kann Kunde die Bestellung abschicken.
+Vom Shop wird die Rechnung erstellt und gleichzeitig werden die bestellten Produkte an die Produktion übergeben.
+Danach endet der Vorgang.
+Ein vorzeitiges Beenden des Vorganges muss nicht modelliert werden.
