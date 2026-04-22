@@ -31,7 +31,7 @@ public class Arithmetik {
 
     @Override
     public String toString() {
-        return new StringJoiner(", ", Arithmetik.class.getSimpleName() + "[", "]")
+        return new StringJoiner(", ", getClass().getSimpleName() + "[", "]")
                 .toString();
     }
 }
