@@ -1,7 +1,5 @@
 package tag08;
 
-import java.util.StringJoiner;
-
 public class Arithmetik {
 
     private int addition(int a, int b) {
