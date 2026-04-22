@@ -17,7 +17,11 @@ public class Arithmetik {
     }
 
     private int division(int a, int b) {
-        return a / b;
+        if (b != 0) {
+            return a / b;
+        }
+
+        throw new ArithmeticException("Division durch Null ist nicht erlaubt");
     }
 
     public int getOperation(Operation operation, int a, int b) {
@@ -27,11 +31,5 @@ public class Arithmetik {
             case MUL -> multiplication(a, b);
             case DIV -> division(a, b);
         };
-    }
-
-    @Override
-    public String toString() {
-        return new StringJoiner(", ", getClass().getSimpleName() + "[", "]")
-                .toString();
     }
 }

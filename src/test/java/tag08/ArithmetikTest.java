@@ -31,11 +31,9 @@ class ArithmetikTest {
 
     @Test
     void getDivisionByZeroOperation() {
-        assertThrows(ArithmeticException.class, () -> arithmetik.getOperation(Operation.DIV, 2, 0));
-    }
+        ArithmeticException exception =
+                assertThrows(ArithmeticException.class, () -> arithmetik.getOperation(Operation.DIV, 2, 0));
 
-    @Test
-    void testToString() {
-        System.out.println(arithmetik.toString());
+        assertEquals("Division durch Null ist nicht erlaubt", exception.getMessage());
     }
 }
