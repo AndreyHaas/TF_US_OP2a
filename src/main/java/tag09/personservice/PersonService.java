@@ -16,7 +16,9 @@ public class PersonService implements Service {
     List<Person> result = new ArrayList<>();
 
     for (Person person : people) {
-      if (person.name().equals(name)) {
+      if (person != null &&
+          person.name() != null &&
+          person.name().equalsIgnoreCase(name)) {
         result.add(person);
       }
     }
