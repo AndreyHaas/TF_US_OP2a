@@ -1,0 +1,76 @@
+
+// Klasse Buch
+
+public class Buch {
+    private String titel;
+    private String autor;
+    private String isbn;
+
+    public Buch(String titel, String autor, String isbn) {
+        this.titel = titel;
+        this.autor = autor;
+        this.isbn = isbn;
+    }
+
+    public String getTitel() {
+        return titel;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    @Override
+    public String toString() {
+        return "Buch{" +
+                "titel='" + titel + '\'' +
+                ", autor='" + autor + '\'' +
+                ", isbn='" + isbn + '\'' +
+                '}';
+    }
+}
+
+
+
+
+// Klasse Bibliothek zu prüfende Klasse
+
+public class Bibliothek {
+    private List<Buch> buecher;
+
+    public Bibliothek() {
+        buecher = new ArrayList<>();
+    }
+
+    public void fuegeBuchHinzu(Buch buch) {
+        buecher.add(buch);
+    }
+
+    public boolean entferneBuch(String isbn) {
+        for (int i = 0; i < buecher.size(); i++) {
+            if (buecher.get(i).getIsbn().equals(isbn)) {
+                buecher.remove(i);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public Buch findeBuchNachTitel(String titel) {
+        for (Buch buch : buecher) {
+            if (buch.getTitel().equalsIgnoreCase(titel)) {
+                return buch;
+            }
+        }
+        return null;
+    }
+
+    public List<Buch> alleBuecherAuflisten() {
+        return new ArrayList<>(buecher);
+    }
+
+}

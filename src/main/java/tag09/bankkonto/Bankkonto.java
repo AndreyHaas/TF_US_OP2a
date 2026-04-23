@@ -12,15 +12,14 @@ public class Bankkonto {
     if (betrag > 0) {
       guthaben += betrag;
     }
-
     return guthaben;
   }
 
   public double abheben(double betrag) {
+    // NUR Geldabheben, falls 'betrag' > 0 UND Bankkonto darf nicht ins Minus kommen
     if (betrag > 0 && betrag <= guthaben) {
       guthaben -= betrag;
     }
-
     return guthaben;
   }
 

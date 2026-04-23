@@ -1,0 +1,26 @@
+Aufgabenstellung
+Aufgabe: Implementiere eine Klasse Calculator, die die Grundrechenarten Addition, Subtraktion, Multiplikation und Division unterstützt. Schreibe JUnit-Tests,
+um die Methoden der Calculator-Klasse zu überprüfen.
+Anforderungen:
+1.	Implementiere die Methoden add, subtract, multiply und divide in der Calculator-Klasse.
+2.	Schreibe JUnit-Tests, um die Methoden zu testen. Der Test für die Division sollte auch die Behandlung einer Division durch 0 überprüfen.
+
+
+1.	Calculator.java:
+•	Die Klasse Calculator enthält vier Methoden: add, subtract, multiply und divide, die die Grundrechenarten unterstützen.
+•	Die Methode divide wirft eine IllegalArgumentException, wenn der Divisor b null ist, um eine Division durch Null zu verhindern.
+2.	CalculatorTest.java:
+•	Die Klasse CalculatorTest enthält JUnit-Tests zur Überprüfung der Calculator-Methoden.
+•	Die Methode setUp erstellt eine neue Instanz von Calculator vor jedem Test.
+•	Die Methoden testAdd, testSubtract, testMultiply und testDivide überprüfen die korrekte Funktionsweise der entsprechenden Methoden der Calculator-Klasse.
+•	Die Methode testDivideByZero stellt sicher, dass die Methode divide eine ArithmeticException wirft, wenn der Divisor null ist.
+
+
+Hinweis:
+
+Sollte bei der Bearbeitung der Aufgabenstellung Fragen und Unsicherheiten auftreten, besteht die Möglichkeit, eine vereinfachte Variante dieser Aufgabe zu lösen. Dazu wird
+die zu prüfende Klasse mit ihren Abhängigkeiten in einer zusätzlichen Textdatei bereitgestellt, die im Ordner/Package "lsg" zu finden ist. In diesem Fall besteht die
+Aufgabe nur noch darin, den eigentlichen JUnit-Test zu erstellen.
+
+
+
