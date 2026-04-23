@@ -1,5 +1,6 @@
 package tag08;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -7,7 +8,12 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class ArithmetikTest {
 
-    Arithmetik arithmetik = new Arithmetik();
+    Arithmetik arithmetik;
+
+    @BeforeEach
+    void setup() {
+        arithmetik = new Arithmetik();
+    }
 
     @Test
     void getAdditionalOperation() {
@@ -31,7 +37,7 @@ class ArithmetikTest {
 
     @Test
     void getDivisionByZeroOperation() {
-        ArithmeticException exception =
+        Throwable exception =
                 assertThrows(ArithmeticException.class, () -> arithmetik.getOperation(Operation.DIV, 2, 0));
 
         assertEquals("Division durch Null ist nicht erlaubt", exception.getMessage());
