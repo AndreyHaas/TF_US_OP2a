@@ -30,7 +30,6 @@ class PersonServiceTest {
 
     for (Person person : result) {
       assertEquals("Max", person.name());
-      System.out.println(person);
     }
   }
 }

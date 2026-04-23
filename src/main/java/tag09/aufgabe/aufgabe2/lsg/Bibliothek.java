@@ -17,25 +17,26 @@ public class Bibliothek {
 
     public boolean entferneBuch(String isbn) {
         for (int i = 0; i < buecher.size(); i++) {
-            if (buecher.get(i).getIsbn().equals(isbn)) {
+            if (buecher.get(i).isbn().equals(isbn)) {
                 buecher.remove(i);
                 return true;
             }
         }
+
         return false;
     }
 
     public Buch findeBuchNachTitel(String titel) {
         for (Buch buch : buecher) {
-            if (buch.getTitel().equalsIgnoreCase(titel)) {
+            if (buch.titel().equalsIgnoreCase(titel)) {
                 return buch;
             }
         }
+
         return null;
     }
 
     public List<Buch> alleBuecherAuflisten() {
         return new ArrayList<>(buecher);
     }
-
 }

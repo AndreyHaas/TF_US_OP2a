@@ -1,6 +1,7 @@
 package tag09.aufgabe.aufgabe2.lsg;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -25,7 +26,7 @@ class BibliothekTest {
     }
 
     @Test
-    public void testFuegeBuchHinzu() {
+    void testFuegeBuchHinzu() {
         Buch buch3 = new Buch("Entwurfsmuster", "Erich Gamma", "1122334455");
         bibliothek.fuegeBuchHinzu(buch3);
         assertEquals(3, bibliothek.alleBuecherAuflisten().size(),
@@ -33,27 +34,34 @@ class BibliothekTest {
     }
 
     @Test
-    public void testEntferneBuch() {
+    void testEntferneBuchBuchExistiert() {
         assertTrue(bibliothek.entferneBuch("1234567890"), "Das Buch sollte entfernt werden");
         assertEquals(1, bibliothek.alleBuecherAuflisten().size(),
                 "Es sollte nur 1 Buch in der Bibliothek sein");
     }
 
     @Test
-    public void testFindeBuchNachTitel() {
+    void testEntferneBuchBuchExistiertNicht() {
+        assertFalse(bibliothek.entferneBuch("01234567890"), "Das Buch sollte nicht entfernt werden");
+        assertEquals(2, bibliothek.alleBuecherAuflisten().size(),
+            "Es sollte nur 1 Buch in der Bibliothek sein");
+    }
+
+    @Test
+    void testFindeBuchNachTitel() {
         Buch buch = bibliothek.findeBuchNachTitel("Sauberer Code");
         assertNotNull(buch, "Das Buch sollte gefunden werden");
         assertEquals(buch2, buch, "Das gefundene Buch sollte 'Sauberer Code' sein");
     }
 
     @Test
-    public void testFindeBuchNachTitelNichtGefunden() {
+    void testFindeBuchNachTitelNichtGefunden() {
         Buch buch = bibliothek.findeBuchNachTitel("Unbekannter Titel");
         assertNull(buch, "Es sollte kein Buch gefunden werden");
     }
 
     @Test
-    public void testAlleBuecherAuflisten() {
+    void testAlleBuecherAuflisten() {
         List<Buch> buecher = bibliothek.alleBuecherAuflisten();
         assertEquals(2, buecher.size(), "Es sollten 2 Bücher in der Bibliothek sein");
         assertTrue(buecher.contains(buch1),
