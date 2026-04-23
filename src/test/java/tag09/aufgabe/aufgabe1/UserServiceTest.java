@@ -1,4 +1,4 @@
-package tag09.aufgabe.aufgabe1.lsg;
+package tag09.aufgabe.aufgabe1;
 
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertThrows;

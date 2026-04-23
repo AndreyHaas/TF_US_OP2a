@@ -1,4 +1,4 @@
-package tag09.aufgabe.aufgabe0.lsg;
+package tag09.aufgabe.aufgabe0;
 
 public class Calculator {
     public int add(int a, int b) {

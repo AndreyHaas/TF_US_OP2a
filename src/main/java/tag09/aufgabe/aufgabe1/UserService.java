@@ -1,4 +1,4 @@
-package tag09.aufgabe.aufgabe1.lsg;
+package tag09.aufgabe.aufgabe1;
 
 public class UserService {
     public void processUser(String username, String password) throws IllegalArgumentException {

@@ -1,4 +1,4 @@
-package tag09.aufgabe.aufgabe2.lsg;
+package tag09.aufgabe.aufgabe2;
 
 import java.util.ArrayList;
 import java.util.List;
