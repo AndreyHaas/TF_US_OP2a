@@ -1,4 +1,4 @@
-package tag09.personService;
+package tag09.personservice;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
