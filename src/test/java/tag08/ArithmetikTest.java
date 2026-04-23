@@ -40,6 +40,6 @@ class ArithmetikTest {
         Throwable exception =
                 assertThrows(ArithmeticException.class, () -> arithmetik.getOperation(Operation.DIV, 2, 0));
 
-        assertEquals("Division durch Null ist nicht erlaubt", exception.getMessage());
+        assertEquals("Division durch 0 (Null) ist nicht erlaubt", exception.getMessage());
     }
 }

@@ -19,7 +19,7 @@ public class Arithmetik {
             return a / b;
         }
 
-        throw new ArithmeticException("Division durch Null ist nicht erlaubt");
+        throw new ArithmeticException("Division durch 0 (Null) ist nicht erlaubt");
     }
 
     public int getOperation(Operation operation, int a, int b) {
